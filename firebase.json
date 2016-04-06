@@ -1,0 +1,11 @@
+{
+  "firebase": "s60912frank",
+  "rules": "rules.json",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    "rules.bolt",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+  <meta charset="UTF-8">
+  <title>I'm gmin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Gmin的留言板</h1>
+
+  <input type='file' accept='image/*' onchange='openFile(event)'><br>
+  <canvas id="imageCanvas"></canvas>
+
+  <div id="auth">
+    帳號: <input type="text" size="15" id="account">
+    密碼: <input type="text" size="15" id="pwd">
+    <button id="login">登入</button>
+    <button id="create">創帳號喔</button>
+  </div>
+
+  <div id="inputfield">
+    內容: <input type="text" size="50" id="message">
+    你誰: <input type="text" size="10" id="author">
+    <button id="submit" disabled>送出</button>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th style="width:50%">留言</th>
+        <th style="width:10%">By</th>
+        <th style="width:20%">時間</th>
+      </tr>
+    </thead>
+    <tbody id="commemts">
+    </tbody>
+  </table>
+
+  <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+  <script src="./jquery-2.2.2.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

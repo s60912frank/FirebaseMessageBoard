@@ -1,0 +1,4 @@
+path /comments {
+  read() = true;
+  write() = (this != null) && (this.image == null);
+}
